@@ -1,8 +1,8 @@
 {
-  "name": "uniswap-v2-subgraph",
-  "version": "1.0.0",
-  "repository": "https://github.com/graphprotocol/uniswap-v2-subgraph",
+  "name": "@manekiswap/subgraph",
   "license": "GPL-3.0-or-later",
+  "version": "1.0.0",
+  "description": "Manekiswap Subgraph",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
@@ -13,13 +13,19 @@
     "watch-local": "graph deploy graphprotocol/Uniswap2 --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "^0.16.0",
-    "@graphprotocol/graph-ts": "^0.16.0",
-    "@typescript-eslint/eslint-plugin": "^2.0.0",
-    "@typescript-eslint/parser": "^2.0.0",
-    "eslint": "^6.2.2",
-    "eslint-config-prettier": "^6.1.0",
-    "prettier": "^1.18.2",
-    "typescript": "^3.5.2"
+    "@graphprotocol/graph-cli": "0.21.1",
+    "@graphprotocol/graph-ts": "0.20.1",
+    "@types/node": "16.7.10",
+    "@typescript-eslint/eslint-plugin": "4.30.0",
+    "@typescript-eslint/parser": "4.30.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.24.2",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "prettier": "2.3.2",
+    "ts-node": "10.2.1",
+    "tsconfig-paths": "3.11.0",
+    "typescript": "4.3.5"
   }
 }
