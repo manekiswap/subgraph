@@ -5,6 +5,7 @@
     "sourceType": "module",
     "project": "./tsconfig.eslint.json"
   },
+  "ignorePatterns": ["**/types/**/*.ts"],
   "plugins": ["@typescript-eslint", "prettier", "simple-import-sort"],
   "extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
   "rules": {

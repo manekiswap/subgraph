@@ -6,7 +6,9 @@
     "noImplicitThis": true,
     "noEmitOnError": true,
     "strictNullChecks": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "target": "ESNext",
+    "moduleResolution": "node"
   },
   "include": ["src"]
 }
