@@ -1,5 +1,5 @@
 diff --git a/node_modules/@graphprotocol/graph-cli/src/command-helpers/compiler.js b/node_modules/@graphprotocol/graph-cli/src/command-helpers/compiler.js
-index 851aa56..51c3504 100644
+index e696aa1..8a91c69 100644
 --- a/node_modules/@graphprotocol/graph-cli/src/command-helpers/compiler.js
 +++ b/node_modules/@graphprotocol/graph-cli/src/command-helpers/compiler.js
 @@ -3,6 +3,11 @@ const ipfsHttpClient = require('ipfs-http-client')
@@ -12,13 +12,13 @@ index 851aa56..51c3504 100644
 +} : {}
 +
  // Helper function to construct a subgraph compiler
- const createCompiler = (manifest, { ipfs, outputDir, outputFormat, skipMigrations, blockIpfsMethods }) => {
-   // Parse the IPFS URL
-@@ -22,6 +27,7 @@ The IPFS URL must be of the following format: http(s)://host[:port]/[path]`)
+ const createCompiler = (
+   manifest,
+@@ -25,6 +30,7 @@ The IPFS URL must be of the following format: http(s)://host[:port]/[path]`)
          host: url.hostname,
          port: url.port,
          'api-path': url.pathname.replace(/\/$/, '') + '/api/v0/',
-+        headers
++        headers,
        })
      : undefined
  
